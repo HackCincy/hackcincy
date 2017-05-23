@@ -111,7 +111,7 @@ h2 {
 
 .navbar-brand img {
   position: absolute;
-  top: -35px;
+  top: -30px;
 }
 
 .navbar-right {
@@ -434,6 +434,15 @@ h2 {
   display: block;
 }
 
+.single-event h5 a {
+  color: #FFFFFF;
+  margin-right: 5px;
+}
+
+.single-event h5 a:hover {
+  color: #F5F5F5;
+}
+
 #event-carousel {
   position: relative;
 }
@@ -601,20 +610,20 @@ h2 {
   margin-bottom: 40px;
 }
 
-#sponsor .item ul {
+#sponsor ul {
   font-size: 0;
   padding: 0;
 }
 
 
-#sponsor .item ul li {
+#sponsor ul li {
   display: inline-block;
   list-style: none;
   width: 33.33%;
   margin-bottom: 75px;
 }
 
-#sponsor .item ul li:last-child {
+#sponsor ul li:last-child {
   margin-right: 0
 }
 

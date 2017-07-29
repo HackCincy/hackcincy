@@ -629,7 +629,8 @@ h2 {
 #sponsor ul li {
   display: inline-block;
   list-style: none;
-  width: 33.33%;
+  width: 30%;
+  margin-right: 15px;
   margin-bottom: 75px;
 }
 

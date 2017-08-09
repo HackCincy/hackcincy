@@ -251,6 +251,61 @@ h2 {
 }
 
 /*************************
+*******Schedule CSS******
+**************************/
+
+#schedule {
+  background-color: #4A4A4A;
+  position: relative;
+  overflow: hidden;
+  padding: 130px 0 100px;
+}
+
+#schedule h2 {
+  font-size: 42px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#schedule table.schedule {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+/*************************
+*******Tracks CSS******
+**************************/
+
+#tracks {
+  background-color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  padding: 130px 0 100px;
+}
+
+#tracks h2 {
+  font-size: 42px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#tracks h4 {
+  font-size: 32px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#tracks p {
+  color: #4A4A4A;
+  text-align: center;
+}
+
+/*************************
 *******Explore CSS******
 **************************/
 

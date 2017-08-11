@@ -570,6 +570,51 @@ h2 {
   background-color: #126d55
 }
 
+/*************************
+******Tracks CSS****
+**************************/
+
+#tracks {
+  background-color: #C11A15;
+  background-position: 50% 0;
+  background-size: contain;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.tracks-content {
+  /*width: 50%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  padding: 20px 20px 50px;
+}
+
+.tracks i {
+  width:100%;
+}
+
+.tracks {
+  margin-top:3em;
+}
+
+.tracks h2 {
+  text-align: center;
+  margin-top:0;
+}
+
+.tracks ul {
+  margin-left:0;
+  padding-left:0;
+  margin-top:2em;
+}
+
+.tracks li {
+  list-style: none;
+  font-size:1.3em;
+  text-align: center;
+  margin-bottom:3em;
+}
 
 
 /*************************

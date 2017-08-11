@@ -293,7 +293,15 @@ h2 {
   color: #4A4A4A;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+#tracks .prizeTracks {
+  margin-top:30px;
+}
+
+#tracks .prizeTracks > div {
+  margin-bottom:40px;
 }
 
 #tracks h4 {

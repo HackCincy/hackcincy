@@ -1,6 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
 
+/****
+ * RED: #BE1E2D
+ * WHITE: #FFFFFF
+ ***/
 
 /*************************
 *******Typography******
@@ -102,7 +106,7 @@ h2 {
 }
 
 .navbar-brand {
-  background-color: #FFFFFF;
+  background-color: #BE1E2D;
   height: 90px;
   margin-bottom: 20px;
   position: relative;
@@ -110,12 +114,11 @@ h2 {
 }
 
 .navbar-brand img {
-  position: absolute;
-  top: -30px;
+  
 }
 
 .navbar-right {
-  background-color: #FFFFFF;
+  background-color: #BE1E2D;
   padding:0 95px 0 0;
   opacity: .9
 }
@@ -123,7 +126,7 @@ h2 {
 .navbar-right li a {
   padding: 35px 21px;
   font-size: 22px;
-  color: #C11A15;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-family: 'Yanone Kaffeesatz', 'sans-serif';
   font-weight: 300;
@@ -138,7 +141,7 @@ h2 {
 
 
 .fixed-menu {
-  background-color: #FFFFFF;
+  background-color: #BE1E2D;
   position: fixed;
   top: 0;
 }
@@ -155,15 +158,15 @@ h2 {
 }
 
 .fixed-menu .navbar-brand {
-  height: 60px;
-  margin-top: 0;
-  padding: 0;
+  height: 30px;
+  margin-top: 15px;
+  padding: 5px;
   margin-bottom: 0;
   width: 125px;
 }
 
 .fixed-menu .navbar-brand img {
-  height:60px;
+  height:30px;
   top: 0;
 }
 

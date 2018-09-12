@@ -29,7 +29,7 @@ $(function() {
 
 
 	// Carousel Auto Slide Off
-	$('#event-carousel, #twitter-feed, #sponsor-carousel, #main-slider').carousel({
+	$('#event-carousel, #twitter-feed, #sponsor-carousel, #sponsor-past-carousel, #main-slider').carousel({
 		interval: false
 	});
 

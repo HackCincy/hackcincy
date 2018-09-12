@@ -211,7 +211,7 @@
 
   #event h2,
   #about h2,
-  #sponsor h2 {
+  .sponsor h2 {
     font-size: 30px;
   }
 
@@ -229,7 +229,7 @@
     right: 46%;
   }
 
-  #sponsor {
+  .sponsor {
     background-position: right 0 bottom 0;
   }
 
@@ -246,12 +246,12 @@
     right: 5%;
   }
 
-  #sponsor .item ul li {
+  .sponsor .item ul li {
     width: 30%;
     margin-right:3%
   }
 
-  #sponsor .item ul li:last-child {
+  .sponsor .item ul li:last-child {
     margin-right: 0;
    }
 
@@ -384,7 +384,7 @@
 
   #event h2,
   #about h2,
-  #sponsor h2 {
+  .sponsor h2 {
     font-size: 30px;
   }
 
@@ -408,7 +408,7 @@
     right: 46%;
   }
 
-  #sponsor {
+  .sponsor {
     background-position: right 0 bottom;
   }
 
@@ -425,12 +425,12 @@
     right: 5%;
   }
 
-  #sponsor .item ul li {
+  .sponsor .item ul li {
     width: 45%;
     margin-right: 5%
   }
 
-  #sponsor .item ul li:last-child {
+  .sponsor .item ul li:last-child {
     margin-right: 0;
    }
 

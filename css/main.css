@@ -654,8 +654,16 @@ h2 {
 ******Sponsor CSS****
 **************************/
 
-#sponsor {
+#sponsor-current {
+  background-color: #212121;
+  padding-bottom: 70px;
+}
+
+#sponsor-past {
   background-color: #2da1c5;
+}
+
+.sponsor {
   background-position:50% 0;
   background-size: cover;
   background-repeat:no-repeat;
@@ -668,31 +676,31 @@ h2 {
   bottom: 0;
 }
 
-#sponsor h2 a {
+.sponsor h2 a {
   color: #FFFFFF;
   text-decoration: underline;
 }
 
-#sponsor h2 a:hover {
+.sponsor h2 a:hover {
   color: #F5F5F5;
 }
 
-#sponsor .col-sm-10 {
+.sponsor .col-sm-10 {
   z-index: 10;
 }
 
-#sponsor h2 {
+.sponsor h2 {
   margin-top: 90px;
   margin-bottom: 40px;
 }
 
-#sponsor ul {
+.sponsor ul {
   font-size: 0;
   padding: 0;
 }
 
 
-#sponsor ul li {
+.sponsor ul li {
   display: inline-block;
   list-style: none;
   width: 30%;
@@ -700,7 +708,7 @@ h2 {
   margin-bottom: 75px;
 }
 
-#sponsor ul li:last-child {
+.sponsor ul li:last-child {
   margin-right: 0
 }
 

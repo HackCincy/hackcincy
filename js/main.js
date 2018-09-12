@@ -1,6 +1,6 @@
 "use strict",
 
-jQuery(function($) {
+$(function() {
 	//Countdown js
 	$("#countdown").countdown({
 		date: "10 nov 2018 10:00:00",

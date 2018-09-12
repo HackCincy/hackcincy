@@ -1,17 +1,17 @@
 jQuery(function($) {'use strict',
-	
+
 	//Countdown js
 	 $("#countdown").countdown({
 			date: "19 aug 2017 10:00:00",
 			format: "on"
 		},
-		
+
 		function() {
 			// callback function
 		});
-	
 
-	
+
+
 	//Scroll Menu
 
 	function menuToggle()
@@ -27,15 +27,15 @@ jQuery(function($) {'use strict',
 				}
 			});
 		}else{
-			
+
 			$('.main-nav').addClass('fixed-menu animated slideInDown');
-				
+
 		}
 	}
 
 	menuToggle();
-	
-	
+
+
 	// Carousel Auto Slide Off
 	$('#event-carousel, #twitter-feed, #sponsor-carousel, #main-slider').carousel({
 		interval: false
@@ -100,7 +100,7 @@ jQuery(function($) {'use strict',
 	});
 
 
-	var styles = [ 
+	var styles = [
 
 	{
 		"featureType": "road",
@@ -141,7 +141,7 @@ jQuery(function($) {'use strict',
 	map.addStyle({
 		styledMapName:"Styled Map",
 		styles: styles,
-		mapTypeId: "map_style"  
+		mapTypeId: "map_style"
 	});
 
 	map.setStyle("map_style");

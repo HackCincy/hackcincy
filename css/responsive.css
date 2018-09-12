@@ -1,6 +1,6 @@
-/* lg */ 
+/* lg */
 @media (min-width: 1200px) {
-  
+
 }
 
 /* md */
@@ -26,7 +26,7 @@
     padding: 20px;
   }
 
-  
+
   #countdown li {
     margin-right: 30px;
   }
@@ -83,7 +83,7 @@
     padding: 20px 15px;
     font-size: 17px;
   }
- 
+
  #countdown li {
   margin-right: 15px;
  }
@@ -125,7 +125,7 @@
   .main-nav .container {
     display: none;
   }
-  
+
   .fixed-menu .container {
     display: block;
   }
@@ -174,7 +174,7 @@
     float: inherit;
     font-size: 30px;
     margin-bottom: 30px;
-  }  
+  }
 
   #countdown li {
     font-size: 14px;
@@ -189,7 +189,7 @@
     width: 60px;
   }
 
-  #countdown li:before, 
+  #countdown li:before,
   #countdown li:after {
     top:25px;
   }
@@ -209,13 +209,13 @@
   }
 
 
-  #event h2, 
-  #about h2, 
+  #event h2,
+  #about h2,
   #sponsor h2 {
     font-size: 30px;
   }
 
-  .twitter-control-left, 
+  .twitter-control-left,
   .twitter-control-right {
     top: inherit;
     bottom: -40px;
@@ -233,7 +233,7 @@
     background-position: right 0 bottom 0;
   }
 
-  .sponsor-control-left, 
+  .sponsor-control-left,
   .sponsor-control-right {
     top:0;
   }
@@ -270,7 +270,7 @@
   }
 
   .about-content {
-    width: 100%;    
+    width: 100%;
     padding: 70px 25px 110px;
   }
 
@@ -339,7 +339,7 @@
     float: inherit;
     font-size: 30px;
     margin-bottom: 30px;
-  }  
+  }
 
   #countdown li {
     font-size: 14px;
@@ -354,7 +354,7 @@
     width: 45px;
   }
 
-  #countdown li:before, 
+  #countdown li:before,
   #countdown li:after {
     top: 18px
   }
@@ -378,23 +378,23 @@
   }
 
   .about-content {
-    width: 100%;    
+    width: 100%;
     padding: 70px 30px 110px;
   }
 
-  #event h2, 
-  #about h2, 
+  #event h2,
+  #about h2,
   #sponsor h2 {
     font-size: 30px;
   }
 
-  .about-content p, 
-  #twitter-feed .item a, 
+  .about-content p,
+  #twitter-feed .item a,
   #twitter-feed .item p {
     font-size: 15px;
   }
 
-  .twitter-control-left, 
+  .twitter-control-left,
   .twitter-control-right {
     top: inherit;
     bottom: -40px;
@@ -412,7 +412,7 @@
     background-position: right 0 bottom;
   }
 
-  .sponsor-control-left, 
+  .sponsor-control-left,
   .sponsor-control-right {
     top: 0;
   }
@@ -433,7 +433,7 @@
   #sponsor .item ul li:last-child {
     margin-right: 0;
    }
- 
+
   #footer {
     font-size: 14px;
   }

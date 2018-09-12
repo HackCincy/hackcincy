@@ -253,6 +253,11 @@ h2 {
   border: 1px solid #fff;
 }
 
+#mc_embed_signup input {
+  color: #000;
+}
+
+
 /*************************
 *******Schedule CSS******
 **************************/

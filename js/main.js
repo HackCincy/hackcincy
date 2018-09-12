@@ -1,35 +1,27 @@
-jQuery(function($) {'use strict',
+"use strict",
 
+jQuery(function($) {
 	//Countdown js
-	 $("#countdown").countdown({
-			date: "10 nov 2018 10:00:00",
-			format: "on"
-		},
-
-		function() {
-			// callback function
-		});
-
-
+	$("#countdown").countdown({
+		date: "10 nov 2018 10:00:00",
+		format: "on"
+	}, function() {});
 
 	//Scroll Menu
 
-	function menuToggle()
-	{
+	function menuToggle() {
 		var windowWidth = $(window).width();
 
-		if(windowWidth > 767 ){
-			$(window).on('scroll', function(){
-				if( $(window).scrollTop()>405 ){
+		if (windowWidth > 767 ) {
+			$(window).on('scroll', function() {
+				if ($(window).scrollTop() > 405) {
 					$('.main-nav').addClass('fixed-menu animated slideInDown');
 				} else {
 					$('.main-nav').removeClass('fixed-menu animated slideInDown');
 				}
 			});
-		}else{
-
+		} else {
 			$('.main-nav').addClass('fixed-menu animated slideInDown');
-
 		}
 	}
 
@@ -64,13 +56,11 @@ jQuery(function($) {'use strict',
 	    scrollThreshold: 0.3,
 	    filter: ':not(.no-scroll)'
 	});
-
 });
 
 
 // Google Map Customization
 (function(){
-
 	var map;
 
 	map = new GMaps({
@@ -101,59 +91,25 @@ jQuery(function($) {'use strict',
 
 
 	var styles = [
-
-	{
-		"featureType": "road",
-		"stylers": [
-		{ "color": "#b4b4b4" }
-		]
-	},{
-		"featureType": "water",
-		"stylers": [
-		{ "color": "#d8d8d8" }
-		]
-	},{
-		"featureType": "landscape",
-		"stylers": [
-		{ "color": "#f1f1f1" }
-		]
-	},{
-		"elementType": "labels.text.fill",
-		"stylers": [
-		{ "color": "#000000" }
-		]
-	},{
-		"featureType": "poi",
-		"stylers": [
-		{ "color": "#d9d9d9" }
-		]
-	},{
-		"elementType": "labels.text",
-		"stylers": [
-		{ "saturation": 1 },
-		{ "weight": 0.1 },
-		{ "color": "#000000" }
-		]
-	}
-
+		{ "featureType": "road", "stylers": [ { "color": "#b4b4b4" } ] },
+		{ "featureType": "water", "stylers": [ { "color": "#d8d8d8" } ] },
+		{ "featureType": "landscape", "stylers": [ { "color": "#f1f1f1" } ] },
+		{ "elementType": "labels.text.fill", "stylers": [ { "color": "#000000" } ] },
+		{ "featureType": "poi", "stylers": [ { "color": "#d9d9d9" } ] },
+		{ "elementType": "labels.text", "stylers": [ { "saturation": 1 }, { "weight": 0.1 }, { "color": "#000000" } ] }
 	];
-
 	map.addStyle({
-		styledMapName:"Styled Map",
-		styles: styles,
-		mapTypeId: "map_style"
+		"styledMapName": "Styled Map",
+		"styles": styles,
+		"mapTypeId": "map_style"
 	});
-
 	map.setStyle("map_style");
 
 	var $container = $("div.organizers");
 	$container.html(shuffle($container.children().get()));
 
 	function shuffle(o){
-			for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-			return o;
+		for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+		return o;
 	};
 }());
-
-
-

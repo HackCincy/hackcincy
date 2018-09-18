@@ -7,7 +7,7 @@
  * Uses the same license as jQuery, see:
  * http://jquery.org/license
  *
- * @version 2.2.0
+ * @version 3.0.0
  *
  * Example usage:
  * $('#nav').onePageNav({
@@ -25,7 +25,6 @@
 		this.$elem = $(elem);
 		this.options = options;
 		this.metadata = this.$elem.data('plugin-options');
-		this.$nav = this.$elem.find('a');
 		this.$win = $(window);
 		this.sections = {};
 		this.didScroll = false;
@@ -36,12 +35,12 @@
 	// the plugin prototype
 	OnePageNav.prototype = {
 		defaults: {
+			navItems: 'a',
 			currentClass: 'current',
 			changeHash: false,
 			easing: 'swing',
 			filter: '',
 			scrollSpeed: 750,
-			scrollOffset: 0,
 			scrollThreshold: 0.5,
 			begin: false,
 			end: false,
@@ -49,28 +48,28 @@
 		},
 
 		init: function() {
-			var self = this;
-
 			// Introduce defaults that can be extended either
 			// globally or using an object literal.
-			self.config = $.extend({}, self.defaults, self.options, self.metadata);
+			this.config = $.extend({}, this.defaults, this.options, this.metadata);
+
+			this.$nav = this.$elem.find(this.config.navItems);
 
 			//Filter any links out of the nav
-			if(self.config.filter !== '') {
-				self.$nav = self.$nav.filter(self.config.filter);
+			if(this.config.filter !== '') {
+				this.$nav = this.$nav.filter(this.config.filter);
 			}
 
 			//Handle clicks on the nav
-			self.$nav.on('click.onePageNav', $.proxy(self.handleClick, self));
+			this.$nav.on('click.onePageNav', $.proxy(this.handleClick, this));
 
 			//Get the section positions
-			self.getPositions();
+			this.getPositions();
 
 			//Handle scroll changes
-			self.bindInterval();
+			this.bindInterval();
 
 			//Update the positions on resize too
-			self.$win.on('resize.onePageNav', $.proxy(self.getPositions, self));
+			this.$win.on('resize.onePageNav', $.proxy(this.getPositions, this));
 
 			return this;
 		},
@@ -121,7 +120,7 @@
 
 				if($target.length) {
 					topPos = $target.offset().top;
-					self.sections[linkHref] = Math.round(topPos) - self.config.scrollOffset;
+					self.sections[linkHref] = Math.round(topPos);
 				}
 			});
 		},
@@ -158,25 +157,18 @@
 				self.unbindInterval();
 
 				//Scroll to the correct position
-				$.scrollTo(newLoc, self.config.scrollSpeed, {
-					axis: 'y',
-					easing: self.config.easing,
-					offset: {
-						top: -self.config.scrollOffset
-					},
-					onAfter: function() {
-						//Do we need to change the hash?
-						if(self.config.changeHash) {
-							window.location.hash = newLoc;
-						}
+				self.scrollTo(newLoc, function() {
+					//Do we need to change the hash?
+					if(self.config.changeHash) {
+						window.location.hash = newLoc;
+					}
 
-						//Add the auto-adjust on scroll back in
-						self.bindInterval();
+					//Add the auto-adjust on scroll back in
+					self.bindInterval();
 
-						//End callback
-						if(self.config.end) {
-							self.config.end();
-						}
+					//End callback
+					if(self.config.end) {
+						self.config.end();
 					}
 				});
 			}
@@ -204,6 +196,14 @@
 					}
 				}
 			}
+		},
+
+		scrollTo: function(target, callback) {
+			var offset = $(target).offset().top;
+
+			$('html, body').animate({
+				scrollTop: offset
+			}, this.config.scrollSpeed, this.config.easing, callback);
 		},
 
 		unbindInterval: function() {

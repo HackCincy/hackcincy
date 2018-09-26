@@ -2,6 +2,7 @@
   "type": "static",
   "public": true,
   "alias": [
+    "hackcincy.com",
     "www.hackcincy.com"
   ],
   "static": {

@@ -52,12 +52,12 @@ h2 {
 }
 
 .navbar-toggle .icon-bar {
-  background-color: #000000;
+  background-color: #212121;
 }
 
 .navbar-toggle,
 .navbar-toggle:focus {
-  border:1px solid #000000;
+  border:1px solid #212121;
   outline: none;
 }
 
@@ -136,7 +136,7 @@ h2 {
 .navbar-right li a:focus,
 .navbar-right .active a {
   background-color: #FFFFFF;
-  color: #000000
+  color: #212121
 }
 
 
@@ -159,7 +159,7 @@ h2 {
 
 .fixed-menu .navbar-brand {
   height: 30px;
-  margin-top: 15px;
+  margin-top: 10px;
   padding: 5px;
   margin-bottom: 0;
   width: 125px;
@@ -191,7 +191,7 @@ h2 {
 
 #main-slider
 .carousel-caption {
-  background: none repeat scroll 0 0 #000000;
+  background: none repeat scroll 0 0 #212121;
   bottom: 14%;
   float: left;
   left: 0;
@@ -218,7 +218,7 @@ h2 {
 #main-slider
 .carousel-caption a {
   font-size: 22px;
-  color: #2da1c5
+  color: #137B6D
 }
 
 #main-slider
@@ -243,8 +243,8 @@ h2 {
 
 #main-slider
 .carousel-indicators li {
-  background-color:#1B7B98;
-  border: 1px solid #1B7B98;
+  background-color:#137B6D;
+  border: 1px solid #137B6D;
 }
 
 #main-slider
@@ -384,27 +384,27 @@ h2 {
 }
 
 #countdown li .days {
-  background-color: #C34C39;
-  border-top: 1px solid #C34C39;
-  border-left: 1px solid #C34C39;
+  background-color: #BE1E2D;
+  border-top: 1px solid #BE1E2D;
+  border-left: 1px solid #BE1E2D;
 }
 
 #countdown li .hours {
-  background-color: #C34C39;
-  border-top: 1px solid #C34C39;
-  border-left: 1px solid #C34C39;
+  background-color: #BE1E2D;
+  border-top: 1px solid #BE1E2D;
+  border-left: 1px solid #BE1E2D;
 }
 
 #countdown li .minutes {
-  background-color: #C34C39;
-  border-top: 1px solid #C34C39;
-  border-left: 1px solid #C34C39;
+  background-color: #BE1E2D;
+  border-top: 1px solid #BE1E2D;
+  border-left: 1px solid #BE1E2D;
 }
 
 #countdown li .seconds {
-  background-color: #C34C39;
-  border-top: 1px solid #C34C39;
-  border-left: 1px solid #C34C39;
+  background-color: #BE1E2D;
+  border-top: 1px solid #BE1E2D;
+  border-left: 1px solid #BE1E2D;
 }
 
 #countdown li:before {
@@ -455,7 +455,7 @@ h2 {
 .cart a i {
   font-size: 30px;
   padding: 20px 12px;
-  background-color: #A64030;
+  background-color: #BE1E2D;
   margin-right: 3px;
 }
 
@@ -465,7 +465,7 @@ h2 {
 *******Event CSS******
 **************************/
 #event {
-  background-color: #2da1c5;
+  background-color: #137B6D;
   background-position: 50% 0;
   background-size: contain;
   position: relative;
@@ -665,15 +665,7 @@ h2 {
 }
 
 #sponsor-past {
-  background-color: #2da1c5;
-}
-
-.sponsor {
-  background-position:50% 0;
-  background-size: cover;
-  background-repeat:no-repeat;
-  padding-bottom: 50px;
-  position: relative;
+  background-color: #7C0A15;
 }
 
 .light {
@@ -687,53 +679,23 @@ h2 {
   text-decoration: underline;
 }
 
-.sponsor h2 a:hover {
-  color: #F5F5F5;
-}
-
-.sponsor .col-sm-10 {
-  z-index: 10;
-}
-
 .sponsor h2 {
   margin-top: 90px;
   margin-bottom: 40px;
 }
 
-.sponsor ul {
-  font-size: 0;
-  padding: 0;
+.sponsors {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
-
-.sponsor ul li {
-  display: inline-block;
-  list-style: none;
-  width: 30%;
-  margin-right: 15px;
-  margin-bottom: 75px;
+.hc-sponsor-logo {
+  display: block !important;
+  flex: 0 0 300px;
+  padding: 30px;
 }
-
-.sponsor ul li:last-child {
-  margin-right: 0
-}
-
-.sponsor-control-left,
-.sponsor-control-right {
-  color: #FFFFFF;
-  font-size: 24px;
-  position: absolute;
-  top: 20%;
-}
-
-.sponsor-control-left {
-  right: 12%
-}
-
-.sponsor-control-right {
-  right: 10%
-}
-
 
 /*************************
 ******Map CSS****
@@ -752,7 +714,7 @@ h2 {
 **************************/
 
 .contact-section {
-  background-color: #f7ab24;
+  background-color: #8CB91D;
   background-position:60% 0;
   background-size:contain;
   background-repeat:no-repeat;
@@ -847,7 +809,7 @@ h2 {
 }
 
 #footer a:hover {
-  color:#1B7B98
+  color:#137B6D
 }
 
 

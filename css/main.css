@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,300,200,700);
 
 /****
- * RED: #BE1E2D
- * WHITE: #FFFFFF
+ BRAND: #BE1E2D
+ https://colorschemedesigner.com/csd-3.5/
  ***/
 
 /*************************
@@ -203,6 +203,13 @@ h2 {
   text-align: left;
 }
 
+#main-slider .carousel-caption .btn-primary {
+  background-color: #137b6d;
+  color: #fff;
+  text-transform: capitalize;
+  border: none;
+  margin-top: 28px;
+}
 
 #main-slider
 .carousel-caption h2 {
@@ -218,12 +225,12 @@ h2 {
 #main-slider
 .carousel-caption a {
   font-size: 22px;
-  color: #137B6D
+  color: white;
 }
 
 #main-slider
 .carousel-caption a:hover {
-  color: #2588a6
+  color: white;
 }
 
 #main-slider
@@ -575,7 +582,7 @@ h2 {
 }
 
 #about .btn-primary {
-  background-color: #137c61;
+  background-color: #137b6d;
   color: #fff;
   text-transform: capitalize;
   border: none;

@@ -471,7 +471,7 @@ h2 {
  /*************************
 *******Event CSS******
 **************************/
-#event {
+#organizers {
   background-color: #137B6D;
   background-position: 50% 0;
   background-size: contain;
@@ -486,7 +486,7 @@ h2 {
 }
 
 
-#event h2 {
+#organizers h2 {
   color: #FFFFFF;
   font-size: 36px;
   font-weight: 300;

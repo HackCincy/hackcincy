@@ -598,40 +598,22 @@ h2 {
 **************************/
 
 #faq {
-  background-color: #4A4A4A;
+  background-color: #137B6D;
   position: relative;
 }
 
 .faq-content {
-  /*width: 50%;
-  background-position: left bottom;
-  background-repeat: no-repeat;
-  background-size: cover;*/
   padding: 70px 70px 110px;
 }
 
-
-#about h2 {
+#faq h2 {
   margin-bottom: 23px;
 }
 
-.about-content p {
+.faq-content p {
   font-size: 17px;
   font-family: 'Dosis',sans-serif;
 }
-
-#about .btn-primary {
-  background-color: #137b6d;
-  color: #fff;
-  text-transform: capitalize;
-  border: none;
-  margin-top: 28px;
-}
-
-#about .btn-primary:hover {
-  background-color: #126d55
-}
-
 
 
 /*************************

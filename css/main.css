@@ -295,37 +295,51 @@ h2 {
 
 #tracks {
   background-color: #FFFFFF;
+  color: #4A4A4A;
+
   position: relative;
   overflow: hidden;
-  padding: 130px 0 100px;
+  padding: 80px 0 100px;
 }
 
 #tracks h2 {
-  font-size: 42px;
+  font-size: 48px;
   color: #4A4A4A;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 }
 
-#tracks .prizeTracks {
-  margin-top:30px;
+#tracks h3 {
+  font-size: 38px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-#tracks .prizeTracks > div {
-  margin-bottom:40px;
+#tracks .row {
+  border-bottom: 1px solid #4A4A4A;
+}
+
+#tracks .row:last-child {
+  border-bottom: none;
+}
+
+#tracks ul {
+  margin-top: 20px;
 }
 
 #tracks h4 {
   font-size: 32px;
   color: #4A4A4A;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
 }
 
 #tracks p {
   color: #4A4A4A;
-  text-align: center;
+  text-align: left;
 }
 
 /*************************

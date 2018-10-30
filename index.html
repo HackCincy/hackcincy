@@ -39,20 +39,21 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '490385961475654');
         fbq('track', 'PageView');
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=490385961475654&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=490385961475654&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 </head>
 
@@ -207,7 +208,8 @@
                         </tr>
                         <tr>
                             <td class="time">6:00 PM</td>
-                            <td>Dinner Provided By <a target="_blank" href="http://www.illuminationworksllc.com/">Illumination Works, LLC</a></td>
+                            <td>Dinner Provided By <a target="_blank" href="http://www.illuminationworksllc.com/">Illumination
+                                    Works, LLC</a></td>
                         </tr>
                         <tr>
                             <td class="time">9:00 PM</td>
@@ -261,39 +263,92 @@
 
     <section id="tracks">
         <div class="container">
-            <div class="row">
-                <h2>Grand Prize</h2>
-                <div class="col-md-4 col-md-offset-4">
-                    <h4>$5,000</h4>
-                    <p>Presented By <a target="_blank" href="https://www.mainstventures.org" class="href">Main Street Ventures</a></p>
-                </div>
-
-            </div>
-        </div>
-        <div class="row prizeTracks">
             <h2>Prize Tracks</h2>
-            <div class="col-md-4 col-sm-6">
-                <h4>Blockchain</h4>
-                <p>$1,000 (Equivalent ETH)</p>
-                <p>Presented By <a target="_blank" href="https://bitbounce.com" class="href">BitBounce</a></p>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <h4>Non-practical</h4>
-                <p>$1,000</p>
-                <p>Presented By <a target="_blank" href="https://alchemy.codes" class="href">Alchemy</a></p>
-            </div>
-            <div class="col-md-4 col-sm-6">
-                <h4>Food / Grocery</h4>
-                <p>$1,000</p>
-                <p>Presented By <a target="_blank" href="https://kroger.com" class="href">Kroger</a></p>
-            </div>
-            <div class="col-md-12 col-sm-6">
-                <h4>Cincinnati</h4>
-                <p>$1,000</p>
-                <p>Presented By <a target="_blank" href="https://callibrity.com" class="href">Callibrity</a></p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Grand Prize</h3>
+                    <h4>$5,000</h4>
+                </div>
+                <div class="col-md-4 col-md-push-4">
+                    <ul>
+                        <li>Presented By <a target="_blank" href="https://www.mainstventures.org" class="href">Main
+                                Street Ventures</a></li>
+                        <li>Weekend winner based on technical complexity and creativity</li>
+                        <li>Decided by the entire judges panel</li>
+                    </ul>
+                </div>
             </div>
 
-        </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Honorable Mention</h3>
+                    <h4>$1,000</h4>
+                </div>
+                <div class="col-md-4 col-md-push-4">
+                    <ul>
+                        <li>Runner-up based on technical complexity and creativity</li>
+                        <li>Decided by the entire judges panel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Cryptocurrency</h3>
+                    <h4>$1,000</h4>
+                </div>
+                <div class="col-md-4 col-md-push-4">
+                    <ul>
+                        <li>Presented By <a target="_blank" href="https://bitbounce.com" class="href">BitBounce</a></li>
+                        <li>Prize paid out in ETH</li>
+                        <li>Requires use of <a target="_blank" href="https://credoex.com/api_docs">CredoEx API</a></li>
+                        <li>Winner chosen by BitBounce's Marty Bauer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Non-practical</h3>
+                    <h4>$1,000</h4>
+                </div>
+                <div class="col-md-4 col-md-push-4">
+                    <ul>
+                        <li>Presented By <a target="_blank" href="https://alchemy.codes" class="href">Alchemy</a></li>
+                        <li>Submissions must be as wacky and unfit for market as possible</li>
+                        <li>Winner chosen by Alchemy's John David Back</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Food / Grocery</h3>
+                    <h4>$1,000</h4>
+                </div>
+                <div class="col-md-4 col-md-push-4">
+                    <ul>
+                        <li>Presented By <a target="_blank" href="https://kroger.com" class="href">Kroger</a></li>
+                        <li>Details TBA</li>
+                        <li>Judge TBA</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Cincinnati</h3>
+                    <h4>$1,000</h4>
+                </div>
+                <div class="col-md-4 col-md-push-4">
+                    <ul>
+                        <li>Presented By <a target="_blank" href="https://callibrity.com" class="href">Callibrity</a></li>
+                        <li>Must provide a benefit to Cincinnati</li>
+                        <li>Bonus points for leveraging <a target="_blank" href="https://data.cincinnati-oh.gov/">Cincinnati Open Data</a></li>
+                        <li>Judge TBA</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -355,8 +410,9 @@
                             improve and learn new development skills.</p>
 
                         <h3>What about parking?</h3>
-                        <p>There are a number of parking lots in the immediate area of Union Hall. 
-                            Find options <a href="https://www.bestparking.com/cincinnati-oh-parking/destinations/union-hall-parking/?view=map&start=2018-11-10T09%3A30%3A00-05%3A00&end=2018-11-11T16%3A00%3A00-05%3A00&daily=1" target="_blank">here</a>.
+                        <p>There are a number of parking lots in the immediate area of Union Hall.
+                            Find options <a href="https://www.bestparking.com/cincinnati-oh-parking/destinations/union-hall-parking/?view=map&start=2018-11-10T09%3A30%3A00-05%3A00&end=2018-11-11T16%3A00%3A00-05%3A00&daily=1"
+                                target="_blank">here</a>.
                             <br>
                             Better yet, take a bus, bike, or e-scooter! 😀</p>
                     </div>
